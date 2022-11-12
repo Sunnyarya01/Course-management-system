@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import com.monitor.exceptions.AdminExceptions;
@@ -61,22 +63,43 @@ public class AdminDaoImpl implements AdminDao{
 	}
 	
 	public String updateCourse(Course c)throws AdminExceptions {
-		String massage = "Course can't be Created Please try again..";
+		String massage = "Course can't be Updated Please try again..";
+				
 		try(Connection conn = DBUtil.getConnection()) {
-			PreparedStatement ps = conn.prepareStatement("update into course values(?, ?, ?, ?)");
-			ps.setInt(1, c.getCourseid());
-			ps.setString(2, c.getCoursename());
-			ps.setInt(3, c.getFee());
-			ps.setString(4, c.getCourseDescription());
+			PreparedStatement ps = conn.prepareStatement("update course set courseName = ?, fee = ?, courseDescription = ? where courseid = ?");
+			ps.setString(1, c.getCoursename());
+			ps.setInt(2, c.getFee());
+			ps.setString(3, c.getCourseDescription());
+			ps.setInt(4, c.getCourseid());
 			
 			int x = ps.executeUpdate();
 			if(x>0) {
-				massage = "Course Added Succesfully !...";
+				massage = "Course Updated Succesfully !...";
 			}
 		} catch (SQLException e) {
-			throw new AdminExceptions("Course can't be Created Please try again..");
+			throw new AdminExceptions("Course can't be Updated Please try again..");
 		}
 		return massage;
+	}
+
+	@Override
+	public List<Course> viewCourse() throws AdminExceptions {
+		List<Course> course = new ArrayList<>();
+		try (Connection conn = DBUtil.getConnection()) {
+			PreparedStatement ps = conn.prepareStatement("select * from course");
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()) {
+				int id = rs.getInt("courseid");
+				String name = rs.getString("courseName");
+				int fee = rs.getInt("fee");
+				String cd = rs.getString("courseDescription");
+				
+				course.add(new Course(id, name, fee, cd));
+			}
+		} catch (SQLException e) {
+			throw new AdminExceptions("You can't see the course Please try again..");
+		}
+		return course;
 	}
 
 }
