@@ -1,19 +1,21 @@
 package com.monitor.model;
 
+import java.sql.Date;
+
 public class Batch {
 	
 	private int batchid;
 	private int courseid;
 	private int facultyid;
 	private int numberOfStudents;
-	private String date;
+	private Date date;
 	private int duration;
 	
 	public Batch() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Batch(int batchid, int courseid, int facultyid, int numberOfStudents, String date, int duration) {
+	public Batch(int batchid, int courseid, int facultyid, int numberOfStudents, Date date, int duration) {
 		super();
 		this.batchid = batchid;
 		this.courseid = courseid;
@@ -55,11 +57,11 @@ public class Batch {
 		this.numberOfStudents = numberOfStudents;
 	}
 
-	public String getDate() {
+	public Date getDate() {
 		return date;
 	}
 
-	public void setDate(String date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
 

@@ -1,12 +1,12 @@
 package com.monitor.exceptions;
 
-public class CoursePlan extends Exception{
+public class CoursePlanExceptions extends Exception{
 	
-	public CoursePlan() {
+	public CoursePlanExceptions() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public CoursePlan(String message) {
+	public CoursePlanExceptions(String message) {
 		super(message);
 		// TODO Auto-generated constructor stub
 	}

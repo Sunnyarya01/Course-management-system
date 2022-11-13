@@ -13,11 +13,11 @@ public class UpdateCourse {
 		
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Enter Course Name: ");
+		System.out.print("Enter Course Name: ");
 		String name = sc.nextLine();
-		System.out.println("Enter Fee: ");
+		System.out.print("Enter Fee: ");
 		int fee = sc.nextInt();
-		System.out.println("Enter Course Description: ");
+		System.out.print("Enter Course Description: ");
 		sc.nextLine();
 		String cd = sc.nextLine();
 		System.out.println("Enter Course Id: ");
