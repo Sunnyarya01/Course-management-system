@@ -17,7 +17,14 @@ public class Main {
 	
 	public static void run() {
 		
+		
+		System.out.println("Type 1 to Start: ");
 		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		if (n==99) {System.out.println("Thanks for using Monitor!...");
+		}
+		while(n!=99) {
 			
 		System.out.println("=============> Welcome to MONITOR <=============");
 		System.out.println("Type Admin for Admin and Faculty for Faculty...");
@@ -29,10 +36,10 @@ public class Main {
 			String check = admin.loginAdmin();
 			System.out.println(check);
 			if(check.equals("Sign in Succesfull !..")) {
-				System.out.print("Type 1 for Course, 2 for Batch, 3 for Faculty, 4 for Course Plan, 5 for Allocated Teacher and 6 for Generate Batch Reoprt: ");
+				System.out.print("Type 99 to exit, Type 1 for Course, 2 for Batch, 3 for Faculty, 4 for Course Plan, 5 for Allocated Teacher and 6 for Generate Batch Reoprt: ");
 				int type = sc.nextInt();
 				if(type==1) {
-					System.out.print("Press 1 for Create new Course, 2 for Update Course and 3 for View Course: ");
+					System.out.print("Press 99 to exit Press 1 for Create new Course, 2 for Update Course and 3 for View Course: ");
 					int press = sc.nextInt();
 					if(press==1) {
 						CreateCourse cc = new CreateCourse();
@@ -45,11 +52,15 @@ public class Main {
 					}else if(press == 3) {
 						ViewCourse vc = new ViewCourse();
 						vc.courseView();
+					}else if(press == 99) {
+						System.out.println("Thanks for using Monitor!...");
+						n = 99;
+						break;
 					}else {
 						System.out.println("Please enter a valid keyword...");
 					}
 				}else if(type == 2) {
-					System.out.print("Press 1 for Create new Batch, 2 for Update Batch and 3 for View Batch: ");
+					System.out.print("Press 99 to exit Press 1 for Create new Batch, 2 for Update Batch and 3 for View Batch: ");
 					int press = sc.nextInt();
 					if(press==1) {
 						CreateBatch cb = new CreateBatch();
@@ -62,11 +73,15 @@ public class Main {
 					}else if(press == 3) {
 						ViewBatch vb = new ViewBatch();
 						vb.batchView();
+					}else if(press == 99) {
+						System.out.println("Thanks for using Monitor!...");
+						n = 99;
+						break;
 					}else {
 						System.out.println("Please enter a valid keyword...");
 					}
 				}else if(type == 3) {
-					System.out.print("Press 1 for Create new Faculty, 2 for Update Faculty and 3 for View Faculty: ");
+					System.out.print("Press 99 to exit Press 1 for Create new Faculty, 2 for Update Faculty and 3 for View Faculty: ");
 					int press = sc.nextInt();
 					if(press==1) {
 						CreateFaculty cf = new CreateFaculty();
@@ -79,11 +94,15 @@ public class Main {
 					}else if(press == 3) {
 						ViewFaculty vf = new ViewFaculty();
 						vf.facultyView();
+					}else if(press == 99) {
+						System.out.println("Thanks for using Monitor!...");
+						n = 99;
+						break;
 					}else {
 						System.out.println("Please enter a valid keyword...");
 					}
 				}else if(type == 4) {
-					System.out.print("Press 1 for Create new Course Plan, 2 for Update Course Plan and 3 for View Course Plan: ");
+					System.out.print("Press 99 to exit Press 1 for Create new Course Plan, 2 for Update Course Plan and 3 for View Course Plan: ");
 					int press = sc.nextInt();
 					if(press==1) {
 						CreatePlan cp = new CreatePlan();
@@ -96,6 +115,10 @@ public class Main {
 					}else if(press == 3) {
 						ViewPlan vp = new ViewPlan();
 						vp.planView();
+					}else if(press == 99) {
+						System.out.println("Thanks for using Monitor!...");
+						n = 99;
+						break;
 					}else {
 						System.out.println("Please enter a valid keyword...");
 					}
@@ -115,6 +138,10 @@ public class Main {
 						// TODO Auto-generated catch block
 						System.out.println(e.getMessage());
 					}
+				}else if(type==99) {
+					System.out.println("Thanks for using Monitor!...");
+					n = 99;
+					break;
 				}else {
 					System.out.println("Please enter a valid keyword...");
 				}
@@ -125,7 +152,7 @@ public class Main {
 				LoginFaculty lf = new LoginFaculty();
 				boolean res = lf.facultyLogin();
 				if(res) {
-					System.out.println("Press 1 for View Course Plan and 2 for Update password: ");
+					System.out.println("Press 99 to exit, Press 1 for View Course Plan and 2 for Update password: ");
 					int press = sc.nextInt();
 					if(press == 1) {
 						ViewPlan vp = new ViewPlan();
@@ -138,6 +165,10 @@ public class Main {
 						} catch (FacultyExceptions e) {
 							System.out.println(e.getMessage());
 						}
+					}else if(press == 99) {
+						System.out.println("Thanks for using Monitor!...");
+						n = 99;
+						break;
 					}else {
 						System.out.println("Please Enter a Valid keyword !.......");
 					}
@@ -146,7 +177,7 @@ public class Main {
 				System.out.println("Please Enter a Valid keyword !.......");
 				run();
 			}
-		
+		}
 	}
 
 }
