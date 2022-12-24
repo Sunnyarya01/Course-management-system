@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.monitor.usecase;
 
 public class Create<T1, T2> {
@@ -30,3 +31,10 @@ public class Create<T1, T2> {
 	
 	
 }
+=======
+package com.monitor.usecase;
+
+public class Create {
+
+}
+>>>>>>> main
