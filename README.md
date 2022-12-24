@@ -26,7 +26,7 @@ So the Automated Course Monitoring System will keep the records of all the cours
 
 ## Tech Stack
 
-[![My Skills](https://skillicons.dev/icons?i=java,hibernate,mysql,github,sts)]()
+[![My Skills](https://skillicons.dev/icons?i=java,hibernate,mysql,github,git)]()
 ## Features
 
 1. Basic authentication of various user accounts (admin, faculty).
