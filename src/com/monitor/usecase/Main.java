@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.monitor.usecase;
 
 import java.util.Scanner;
@@ -181,3 +182,5 @@ public class Main {
 	}
 
 }
+=======
+>>>>>>> c70e7b919e0f85873b96e959ec64f7358e954410
