@@ -1,4 +1,4 @@
-# Course-Monitoring-System-pink-cactus-3310-
+# Course-Monitoring-System
  
 <h1 align="center" style="font-size:35px">
   <b>Course Monitoring System</b>
