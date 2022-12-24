@@ -43,7 +43,8 @@ So the Automated Course Monitoring System will keep the records of all the cours
 
 ## Screenshots
 
-![Admin Login](https://user-images.githubusercontent.com/76105799/193438208-c53e6eaa-25d2-4e64-8aa0-cf1ced5ce656.png)
+![Admin Login](https://user-images.githubusercontent.com/88590770/209419163-b7c6ac89-0ba2-4eee-b5a7-cd96cd5c8b9a.jpg)
+![Faculty Login](https://user-images.githubusercontent.com/88590770/209419173-3be2297e-fd6c-4aa5-b0f4-57191c1c6337.jpg)
 <br/><br/>
 ![Database](https://user-images.githubusercontent.com/76105799/193437820-57921009-d8ce-48b5-a9e3-2511413870ab.png)
 
