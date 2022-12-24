@@ -48,7 +48,7 @@ So the Automated Course Monitoring System will keep the records of all the cours
 <br/><br/>
 
 ## ER Diagram
-![Database]([https://user-images.githubusercontent.com/76105799/193437820-57921009-d8ce-48b5-a9e3-2511413870ab.png](https://user-images.githubusercontent.com/88590770/209419663-0ef09bf8-83d7-483a-9367-e4723aa668b5.jpg)))
+![Database](https://user-images.githubusercontent.com/88590770/209419663-0ef09bf8-83d7-483a-9367-e4723aa668b5.jpg))
 
 
 
