@@ -1,4 +1,4 @@
-### Course-Monitoring-System(Monitor)
+### Course-Monitoring-System `Monitor`
  
 <h1 align="center" style="font-size:35px">
   <b>Course Monitoring System</b>
@@ -52,7 +52,7 @@ In a cunstruct week of SB101 in Masai School I made this project indivisually so
 <br/><br/>
 
 ## ER Diagram
-![Database](https://user-images.githubusercontent.com/88590770/209419663-0ef09bf8-83d7-483a-9367-e4723aa668b5.jpg))
+![Database](https://user-images.githubusercontent.com/88590770/209419663-0ef09bf8-83d7-483a-9367-e4723aa668b5.jpg)
 
 
 
